@@ -291,7 +291,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720264909
 GameObject:
@@ -454,7 +454,7 @@ RectTransform:
   - {fileID: 720264910}
   - {fileID: 63489122}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -517,48 +517,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!1001 &867199889
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079544388589938, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 663af109ef90a0b449081cd1f314c06e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &869067657
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +829,10 @@ Prefab:
     - target: {fileID: 4938917314873014, guid: 07f279879dcc9f3468d8a387d2ee2d9d, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433227704313864, guid: 07f279879dcc9f3468d8a387d2ee2d9d, type: 2}
+      propertyPath: m_Name
+      value: Level Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07f279879dcc9f3468d8a387d2ee2d9d, type: 2}
