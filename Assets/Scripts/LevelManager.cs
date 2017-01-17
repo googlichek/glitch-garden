@@ -7,7 +7,10 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
+        }
     }
 
     /// <summary>
