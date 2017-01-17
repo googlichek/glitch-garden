@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public float AutoLoadNextLevelAfter = 5f;
+
+    void Start()
+    {
+        Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
+    }
+
     /// <summary>
     /// Loads scene with a given name. 
     /// </summary>
