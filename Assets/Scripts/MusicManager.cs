@@ -8,6 +8,21 @@ public class MusicManager : MonoBehaviour
 
     private AudioSource _audioSource;
 
+    void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoad;
+    }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void ChangeVolume(float volume)
+    {
+        _audioSource.volume = volume;
+    }
+
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         var thisSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -20,15 +35,5 @@ public class MusicManager : MonoBehaviour
             _audioSource.loop = true;
             _audioSource.Play();
         }
-    }
-
-    void Start()
-    {
-        SceneManager.sceneLoaded += OnSceneLoad;
-    }
-
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
     }
 }
