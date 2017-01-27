@@ -7,7 +7,11 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (AutoLoadNextLevelAfter <= 0)
+        {
+            Debug.Log("Level auto load disabled.");
+        }
+        else
         {
             Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
         }
@@ -19,6 +23,7 @@ public class LevelManager : MonoBehaviour
     /// <param name="name">Scene name.</param>
 	public void LoadLevel(string name)
     {
+        Debug.Log("New level load: " + name);
 		SceneManager.LoadScene(name);
 	}
 
@@ -27,6 +32,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void LoadNextLevel()
     {
+        Debug.Log("New level load: " + name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -35,6 +41,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
 	public void QuitRequest()
     {
+        Debug.Log("Quit requested.");
 		Application.Quit ();
 	}
 }
