@@ -7,11 +7,11 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        if (AutoLoadNextLevelAfter <= 0)
+        if (AutoLoadNextLevelAfter < 0)
         {
             Debug.Log("Level auto load disabled.");
         }
-        else
+        else if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
         }
