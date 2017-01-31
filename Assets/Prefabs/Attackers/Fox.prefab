@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4775169356676736}
   - component: {fileID: 95125602627879664}
   - component: {fileID: 114324907114582272}
+  - component: {fileID: 61980283862820974}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -71,6 +72,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61980283862820974
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1564489248560624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.020393372, y: -0.005098343}
+  serializedVersion: 2
+  m_Size: {x: 0.9078722, y: 0.63255787}
 --- !u!95 &95125602627879664
 Animator:
   serializedVersion: 3

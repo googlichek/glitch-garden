@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946096644638880}
   - component: {fileID: 212274138140836544}
+  - component: {fileID: 61286555696741650}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Untagged
@@ -52,6 +53,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4330740191461018}
   - component: {fileID: 95146895380058758}
+  - component: {fileID: 61114849665404944}
+  - component: {fileID: 114209435678134124}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -100,6 +103,34 @@ Transform:
   m_Father: {fileID: 4330740191461018}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61114849665404944
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891834794339624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!61 &61286555696741650
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625859824855468}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00000023841858, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.47999996, y: 0.43999997}
 --- !u!95 &95146895380058758
 Animator:
   serializedVersion: 3
@@ -117,6 +148,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114209435678134124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891834794339624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1577d48485c1443ac02eebd92f9a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212274138140836544
 SpriteRenderer:
   m_ObjectHideFlags: 1
