@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4775169356676736}
   - component: {fileID: 95125602627879664}
-  - component: {fileID: 114324907114582272}
   - component: {fileID: 61980283862820974}
   - component: {fileID: 50557542419926998}
+  - component: {fileID: 114324907114582272}
   - component: {fileID: 114207948150436714}
   m_Layer: 0
   m_Name: Fox
@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a62bf2214a6a1e4b9111e99a2be0414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentSpeed: 0.45
 --- !u!212 &212502811013284272
 SpriteRenderer:
   m_ObjectHideFlags: 1
