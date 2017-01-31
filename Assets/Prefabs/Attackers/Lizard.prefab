@@ -20,8 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4148535383692786}
   - component: {fileID: 95700717328663094}
-  - component: {fileID: 114328861334348342}
   - component: {fileID: 61219308384785182}
+  - component: {fileID: 50930449602213418}
+  - component: {fileID: 114328861334348342}
+  - component: {fileID: 114150063332735946}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -72,6 +74,26 @@ Transform:
   m_Father: {fileID: 4148535383692786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50930449602213418
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1280682221603124}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61219308384785182
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -103,6 +125,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114150063332735946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1280682221603124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5a03c8c897d4b4a858326f17ddd81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114328861334348342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a62bf2214a6a1e4b9111e99a2be0414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentSpeed: 1
 --- !u!212 &212575643111985756
 SpriteRenderer:
   m_ObjectHideFlags: 1
