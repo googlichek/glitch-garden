@@ -3,7 +3,7 @@
 public class Attacker : MonoBehaviour
 {
     [Range(-1.5f, 1.5f)]
-    public float WalkSpeed;
+    public float CurrentSpeed;
 
     void Start()
     {
@@ -13,11 +13,19 @@ public class Attacker : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.left * WalkSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * CurrentSpeed * Time.deltaTime);
     }
 
     void OnTriggerEnter2D()
     {
-        
+    }
+
+    public void SetSpeed(float speed)
+    {
+        CurrentSpeed = speed;
+    }
+
+    public void StrikeCurrentTarget(float damage)
+    {
     }
 }
