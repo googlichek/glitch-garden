@@ -2,7 +2,7 @@
 
 public class Button : MonoBehaviour
 {
-    public static GameObject _selectedDefender;
+    public static GameObject SelectedDefender;
     public GameObject DefenderPrefab;
 
     private Button[] _buttonArray;
@@ -20,6 +20,6 @@ public class Button : MonoBehaviour
         }
 
         GetComponent<SpriteRenderer>().color = Color.white;
-        _selectedDefender = DefenderPrefab;
+        SelectedDefender = DefenderPrefab;
     }
 }

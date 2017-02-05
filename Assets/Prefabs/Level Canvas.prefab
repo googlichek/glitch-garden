@@ -74,6 +74,8 @@ GameObject:
   - component: {fileID: 224618396148636610}
   - component: {fileID: 222010036916864980}
   - component: {fileID: 114057459396189286}
+  - component: {fileID: 61025510564652786}
+  - component: {fileID: 114181604896511912}
   m_Layer: 5
   m_Name: Core Game
   m_TagString: Untagged
@@ -99,6 +101,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &61025510564652786
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652483696741742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1200, y: 675}
 --- !u!114 &114037881123881944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,6 +295,19 @@ MonoBehaviour:
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114181604896511912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652483696741742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69113dedc6bc9b4e8c1b091b54bdb90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameCamera: {fileID: 20913747457793798, guid: fa4cd09edc49fb845a246c13b9233257,
+    type: 2}
 --- !u!114 &114225535919043100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -415,7 +444,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477368664413768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 0.0075, y: 0.0075, z: 0}
   m_Children:
   - {fileID: 224615467984236342}
