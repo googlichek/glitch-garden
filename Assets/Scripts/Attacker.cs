@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
+    [Tooltip("Average number of seconds between appearances")]
+    public float SeenEverySeconds;
+
     private float _currentSpeed;
     private GameObject _currentTarget;
     private Animator _animator;
