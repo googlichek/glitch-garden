@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
     public Camera GameCamera;
 
     private GameObject _defenderParent;
+    private StarDisplay _starDisplay;
 
     void Start()
     {
         _defenderParent = GameObject.Find("Defenders");
+        _starDisplay = FindObjectOfType<StarDisplay>();
 
         if (!_defenderParent)
         {
@@ -22,6 +24,20 @@ public class DefenderSpawner : MonoBehaviour
         Vector2 position = SnapToGrid(rawPosition);
 
         GameObject defender = Button.SelectedDefender;
+
+        int defenderCost = defender.GetComponent<Defender>().StarCost;
+        if (_starDisplay.UseStars(defenderCost) == StarDisplay.Status.Success)
+        {
+            SpawnDefender(defender, position);
+        }
+        else
+        {
+            Debug.Log("Insufficient stars to spawn");
+        }
+    }
+
+    private void SpawnDefender(GameObject defender, Vector2 position)
+    {
         Quaternion zeroRotation = Quaternion.identity;
 
         GameObject actualDefender = Instantiate(defender, position, zeroRotation) as GameObject;

@@ -372,7 +372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89d919e9a5398d42b25028d4c40c899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StarsCountText: {fileID: 114305681262257768}
 --- !u!114 &114305681262257768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,7 +393,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9a9a7bdde5c74434393a5b2846497384, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -405,7 +404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stars
+  m_Text: 0
 --- !u!114 &114486748259455582
 MonoBehaviour:
   m_ObjectHideFlags: 1

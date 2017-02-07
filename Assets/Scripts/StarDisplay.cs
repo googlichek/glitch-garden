@@ -4,19 +4,42 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class StarDisplay : MonoBehaviour
 {
-    public Text StarsCountText;
+    public enum Status
+    {
+        Success,
+        Failure
+    }
 
-    private int _starsCount;
+    private Text _starsCountText;
+    private int _starsCount = 100;
+
+    void Start()
+    {
+        _starsCountText = GetComponent<Text>();
+        UpdateDisplay();
+    }
 
     public void AddStars(int amount)
     {
         _starsCount += amount;
-        StarsCountText.text = _starsCount.ToString();
+        UpdateDisplay();
     }
 
-    public void UseStars(int amount)
+    public Status UseStars(int amount)
     {
-        _starsCount -= amount;
-        StarsCountText.text = _starsCount.ToString();
+        if (_starsCount >= amount)
+        {
+            _starsCount -= amount;
+            UpdateDisplay();
+
+            return Status.Success;
+        }
+
+        return Status.Failure;
+    }
+
+    private void UpdateDisplay()
+    {
+        _starsCountText.text = _starsCount.ToString();
     }
 }
