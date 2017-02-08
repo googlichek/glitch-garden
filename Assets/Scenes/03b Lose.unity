@@ -722,17 +722,17 @@ Prefab:
     - target: {fileID: 224536261180951752, guid: bc603dcbd694bfb41a2ced7a053eefee,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -592.5
+      value: -446.5
       objectReference: {fileID: 0}
     - target: {fileID: 224536261180951752, guid: bc603dcbd694bfb41a2ced7a053eefee,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 101
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 224536261180951752, guid: bc603dcbd694bfb41a2ced7a053eefee,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 271
+      value: 563
       objectReference: {fileID: 0}
     - target: {fileID: 224536261180951752, guid: bc603dcbd694bfb41a2ced7a053eefee,
         type: 2}
@@ -772,7 +772,14 @@ Prefab:
     - target: {fileID: 114446090600977148, guid: bc603dcbd694bfb41a2ced7a053eefee,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 02 Level_02
+      value: 02 Level_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354122983123944, guid: bc603dcbd694bfb41a2ced7a053eefee,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Start again
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc603dcbd694bfb41a2ced7a053eefee, type: 2}
