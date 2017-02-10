@@ -27,6 +27,7 @@ public class MusicManager : MonoBehaviour
         var thisSceneIndex = SceneManager.GetActiveScene().buildIndex;
         var currentLevelSound = LevelSoundArray[thisSceneIndex];
         _audioSource = GetComponent<AudioSource>();
+        _audioSource.volume = PlayerPrefsManager.GetMasterVolume();
 
         if (currentLevelSound)
         {
