@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Button : MonoBehaviour
 {
@@ -6,10 +7,14 @@ public class Button : MonoBehaviour
     public GameObject DefenderPrefab;
 
     private Button[] _buttonArray;
+    private Text _costText;
 
-    void Start()
+    private void Start()
     {
         _buttonArray = FindObjectsOfType<Button>();
+
+        _costText = GetComponentInChildren<Text>();
+        _costText.text = DefenderPrefab.GetComponent<Defender>().StarCost.ToString();
     }
 
     void OnMouseDown()
@@ -17,6 +22,7 @@ public class Button : MonoBehaviour
         foreach (Button button in _buttonArray)
         {
             button.GetComponent<SpriteRenderer>().color = Color.black;
+
         }
 
         GetComponent<SpriteRenderer>().color = Color.white;
